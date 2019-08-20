@@ -1,0 +1,70 @@
+.filterBox {
+  background-color: white;
+  text-align: left;
+}
+
+.filterBox h2 {
+  background-color: #ff5151;
+  padding: 0.7em;
+}
+
+.filter-checkboxes {
+  margin-top: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.filter-checkboxes label {
+  margin-left: 1em;
+}
+
+.filter-checkboxes input {
+  cursor: pointer;
+  margin: auto;
+}
+
+.filter-checkboxes label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.searchBar {
+  margin: 0;
+  padding: 5%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.searchBar input[type=text] {
+  width: 100%;
+  background: url(/icons/search-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: left;
+  padding-left: 15%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .filter-checkboxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1%;
+  }
+  .filter-checkboxes label {
+    margin: auto;
+    margin-left: 1%;
+  }
+  .filter-cities {
+    display: flex;
+  }
+  .filterBox {
+    background-color: white;
+    text-align: center;
+  }
+  .filter-checkboxes {
+  }
+}

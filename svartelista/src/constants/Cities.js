@@ -1,0 +1,1 @@
+export const Cities = ['Oslo', 'Bergen', 'Trondheim', 'Kristiansand'].sort()

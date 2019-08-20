@@ -1,0 +1,17 @@
+.about-site {
+  line-height: 2;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  padding: 5%;
+  margin: auto;
+  margin-top: 10em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-site {
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+  }
+}

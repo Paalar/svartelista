@@ -1,0 +1,161 @@
+.new-post {
+  color: white;
+  background-color: #ff5151;
+  padding: .5rem;
+  font-size: 2em;
+  margin-bottom: 0;
+  width: 50%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 25px 25px 0 0;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 1px 1px 2px black;
+  transition: width 0.3s;
+}
+
+.new-post:hover {
+  width: 100%;
+  color: #ff5151;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
+}
+
+.item-landlord {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-weight: bold;
+}
+
+.item-address {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  font-weight: bold;
+}
+
+.city-radio {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding-left: 1%;
+}
+
+.city-radio p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+input[type=text] {
+  display: block;
+}
+
+.item-description {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+  font-weight: bold;
+}
+
+.form-button {
+  margin-top: 1em;
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+  background-color: #ff5656;
+}
+
+.form-button:hover {
+  background-color: #e84f4f;
+}
+
+.city-label input {
+  margin-right: 1em;
+}
+
+.item-city > input {
+  background-color: black;
+}
+.item-city input:hover {
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  border-width: 0px 3px 3px 3px;
+  border: 3px solid #ff5656;
+  padding: 1%;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+  text-align: left;
+  margin: auto;
+  width: 50%;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.item-city > div > label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+label {
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .new-post {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+  .new-post:hover {
+    color: white;
+    background-color: #ff5151;
+    box-shadow: 1px 1px 2px black;
+  }
+  .new-post h1 {
+    width: 100%;
+    margin-top: 0.5em;
+    margin: auto;
+  }
+  form {
+    width: 100%;
+  }
+  .item-landlord {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
+  .item-address {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+  }
+  .city-radio {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
+  .item-city {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .city-label {
+    width: 10em;
+  }
+  .item-description {
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+  }
+  .form-button {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .new-post {
+    width: 75%;
+  }
+  form {
+    width: 100%;
+  }
+}
